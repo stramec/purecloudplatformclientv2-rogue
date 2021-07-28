@@ -1,0 +1,30 @@
+---
+title: RecordingEmailMessage
+---
+
+:::error
+**The Ruby SDK is deprecated as of 9/16/2020**
+
+The Genesys Cloud Ruby SDK (v96.0.0) will be frozen at its current version level. Any new enhancements to our API or bug fixes will not be backported. If you do need to take advantage of new features or bug fixes outside the Genesys Cloud Ruby SDK, you will need to use the Genesys Cloud REST endpoints directly. More information can be found in the [Official Announcement](https://developer.mypurecloud.com/forum/t/announcement-genesys-cloud-ruby-sdk-end-of-life/8850).
+:::
+
+
+## PureCloud::RecordingEmailMessage
+
+## Properties
+
+|Name | Type | Description | Notes|
+|------------ | ------------- | ------------- | -------------|
+| **html_body** | **String** |  | [optional] |
+| **text_body** | **String** |  | [optional] |
+| **id** | **String** |  | [optional] |
+| **to** | [**Array&lt;EmailAddress&gt;**](EmailAddress.html) |  | [optional] |
+| **cc** | [**Array&lt;EmailAddress&gt;**](EmailAddress.html) |  | [optional] |
+| **bcc** | [**Array&lt;EmailAddress&gt;**](EmailAddress.html) |  | [optional] |
+| **from** | [**EmailAddress**](EmailAddress.html) |  | [optional] |
+| **subject** | **String** |  | [optional] |
+| **attachments** | [**Array&lt;EmailAttachment&gt;**](EmailAttachment.html) |  | [optional] |
+| **time** | **DateTime** | Date time is represented as an ISO-8601 string. For example: yyyy-MM-ddTHH:mm:ss.SSSZ | [optional] |
+{: class="table table-striped"}
+
+
