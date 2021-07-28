@@ -2,6 +2,8 @@
 title: Platform API Client SDK - Ruby
 ---
 
+JUST A HACKY ROGUE VERSION OF THE ORIGINAL SDK TO GET SOMETHING WORKING
+
 :::error
 **The Ruby SDK is deprecated as of 9/16/2020**
 
