@@ -332,10 +332,10 @@ module PureCloud
       
       
       
-      allowed_values = ["active", "inactive", "deleted"]
-      if @state && !allowed_values.include?(@state)
-        return false
-      end
+      # allowed_values = ["active", "inactive", "deleted"]
+      # if @state && !allowed_values.include?(@state)
+      #   return false
+      # end
       
       
       
@@ -353,10 +353,10 @@ module PureCloud
       
       
       
-      allowed_values = ["PureCloud", "PureEngage", "PureEngageCloud", "PureConnect", "PureConnectCloud", "Unknown"]
-      if @product_platform && !allowed_values.include?(@product_platform)
-        return false
-      end
+      # allowed_values = ["PureCloud", "PureEngage", "PureEngageCloud", "PureConnect", "PureConnectCloud", "Unknown"]
+      # if @product_platform && !allowed_values.include?(@product_platform)
+      #   return false
+      # end
       
       
       
@@ -415,10 +415,10 @@ module PureCloud
     # Custom attribute writer method checking allowed values (enum).
     # @param [Object] state Object to be assigned
     def state=(state)
-      allowed_values = ["active", "inactive", "deleted"]
-      if state && !allowed_values.include?(state)
-        fail ArgumentError, "invalid value for 'state', must be one of #{allowed_values}."
-      end
+      # allowed_values = ["active", "inactive", "deleted"]
+      # if state && !allowed_values.include?(state)
+      #   fail ArgumentError, "invalid value for 'state', must be one of #{allowed_values}."
+      # end
       @state = state
     end
 
@@ -444,10 +444,10 @@ module PureCloud
     # Custom attribute writer method checking allowed values (enum).
     # @param [Object] product_platform Object to be assigned
     def product_platform=(product_platform)
-      allowed_values = ["PureCloud", "PureEngage", "PureEngageCloud", "PureConnect", "PureConnectCloud", "Unknown"]
-      if product_platform && !allowed_values.include?(product_platform)
-        fail ArgumentError, "invalid value for 'product_platform', must be one of #{allowed_values}."
-      end
+      # allowed_values = ["PureCloud", "PureEngage", "PureEngageCloud", "PureConnect", "PureConnectCloud", "Unknown"]
+      # if product_platform && !allowed_values.include?(product_platform)
+      #   fail ArgumentError, "invalid value for 'product_platform', must be one of #{allowed_values}."
+      # end
       @product_platform = product_platform
     end
 
