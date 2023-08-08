@@ -19,6 +19,7 @@ require 'json'
 require 'logger'
 require 'tempfile'
 require 'typhoeus'
+require 'erb'
 require 'uri'
 
 module PureCloud
@@ -227,7 +228,7 @@ module PureCloud
     def build_request_url(path)
       # Add leading and trailing slashes to path
       path = "/#{path}".gsub(/\/+/, '/')
-      URI.encode(@config.base_url + path)
+      ERB::Util.url_encode(@config.base_url + path)
     end
 
     def build_request_body(header_params, form_params, body)

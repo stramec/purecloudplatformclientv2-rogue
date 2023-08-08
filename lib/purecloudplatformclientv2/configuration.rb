@@ -1,4 +1,5 @@
 require 'uri'
+require 'erb'
 
 module PureCloud
   class Configuration
@@ -136,7 +137,7 @@ module PureCloud
 
     def base_url
       url = "https://#{[host, base_path].join('/').gsub(/\/+/, '/')}".sub(/\/+\z/, '')
-      URI.encode(url)
+      ERB::Util.url_encode(url)
     end
 
     # Gets API key (with prefix if set).
