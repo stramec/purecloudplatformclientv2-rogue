@@ -4,7 +4,7 @@ require "purecloudplatformclientv2/version"
 
 Gem::Specification.new do |s|
   s.name        = "purecloudplatformclientv2"
-  s.version     = '0.0.99'
+  s.version     = '0.0.999'
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Genesys Developer Evangelists"]
   s.email       = ["developerevangelists@inin.com"]
